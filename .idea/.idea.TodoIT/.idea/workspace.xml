@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de3dbfd1-c5bb-45f1-9dcf-078435803b01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TodoIT/Data/People.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToDoIT.Tests/PeopleTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TodoIT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TodoIT/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoIT/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TodoIT/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoIT.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/TodoIT.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoIT/Data/People.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TodoIT/Data/People.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,5 +81,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet Exception Breakpoints">
+          <properties exception="System.IndexOutOfRangeException" isInternal="false" displayValue="IndexOutOfRangeException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -33,7 +33,7 @@ namespace TodoIT.Data
         {
             Person p = new Person(PersonSequencer.nextPersonId(),firstName,lastName);
             Array.Resize(ref _persons,_persons.Length + 1);
-            
+            _persons[_persons.Length - 1] = p;
             return p;
         }
         
