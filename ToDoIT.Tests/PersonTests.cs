@@ -20,7 +20,7 @@ namespace ToDoITTEsts
         }
         
         [Fact]
-        public void Constructor_NullArguments()
+        public void Constructor_EmptyArguments()
         {
             string firstName = "";
             string lastName = "";

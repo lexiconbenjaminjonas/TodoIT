@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de3dbfd1-c5bb-45f1-9dcf-078435803b01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ToDoIT.Tests/PersonTest1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ToDoIT.Tests/PersonTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoIT.sln.DotSettings.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToDoIT.Tests/PersonSequencerTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoIT/Data/PersonSequencer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TodoIT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TodoIT/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoIT/Model/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TodoIT/Model/Person.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoIT.Tests/PersonTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoIT.Tests/PersonTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ToDoIT.Tests/PersonTest1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
