@@ -40,7 +40,7 @@ namespace TodoIT.Data
 
         public void Clear()
         {
-            _
+            Array.Clear(_toDoItem, 0, _toDoItem.Length);
         }
     }
 }
