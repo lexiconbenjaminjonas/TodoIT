@@ -1,24 +1,30 @@
-﻿using TodoIT.Data;
+﻿using System;
+using TodoIT.Data;
 using TodoIT.Model;
 using Xunit;
 
 namespace ToDoITTEsts
 {
+
     public class PeopleTests
     {
+        
         [Fact]
         public void SizeTest()
         {
             //Set up
             People people = new People();
+            people.Clear();
             
             //Act
+            int before = people.Size();
             people.CreatePerson("First", "Last");
-            var peopleSize = people.Size();
+            var after = people.Size();
             
             //Assert
-            Assert.Equal(1,peopleSize);
+            Assert.Equal(before + 1,after);
         }
+        
         [Fact]
         public void CreatePersonTest()
         {
@@ -47,8 +53,10 @@ namespace ToDoITTEsts
             p.Clear();
             
             //Assert
-            Assert.NotEqual(peoplesizeBeforeReset,p.Size());
+            // Assert.NotEqual(peoplesizeBeforeReset,p.Size());
+            Assert.All(p.FindAll(),a=>Assert.Null(a));
         }
+
         [Fact]
         public void FindByIDTest()
         {
@@ -67,7 +75,7 @@ namespace ToDoITTEsts
             people.CreatePerson("Person A","1");
             people.CreatePerson("Person B","2");
 
-            var foundPerson = people.FindById(2);
+            var foundPerson = people.FindById(-1);
             Assert.Null(foundPerson);
         }
 
