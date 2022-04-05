@@ -4,14 +4,20 @@ using System.Text;
 
 namespace TodoIT.Model
 {
-    class ToDo
+    public class ToDo
     {
-        private readonly int todoId;
-        private string description;
-        private bool done;
-        private Person assignee;
+        private readonly int _todoId;
+        private string _description;
+        private bool _done;
+        private Person _assignee;
+        public int todoIDTest { get  => _todoId;}
+        public string descriptionTest { get => _description; }
 
-        public ToDo(int todoIt, string description) { }
+
+        public ToDo(int todoIt, string description) {
+            _todoId = todoIt;
+            _description = description;
+        }
     }
 
     

@@ -1,14 +1,25 @@
 using System;
 using Xunit;
+using TodoIT.Model;
 
 namespace ToDoITTEsts
 {
-    public class UnitTest1
+    
+
+    public class ToDoTest
     {
         [Fact]
-        public void Test1()
+        public void ConstructorTest()
         {
 
+            //Arrange.
+            ToDo sut = new ToDo(1, "Test");
+            //Act.
+
+            //Assert.
+            Assert.Equal(1, sut.todoIDTest);
+            Assert.Equal("Test", sut.descriptionTest);
         }
+
     }
 }
