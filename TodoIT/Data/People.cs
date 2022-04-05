@@ -39,7 +39,7 @@ namespace TodoIT.Data
         
         public void Clear()
         {
-            _persons = new Person[0];
+            Array.Clear(_persons,0,_persons.Length);
         }
     }
 }
