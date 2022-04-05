@@ -17,8 +17,8 @@ namespace ToDoITTEsts
             //Act.
 
             //Assert.
-            Assert.Equal(1, sut.todoIDTest);
-            Assert.Equal("Test", sut.descriptionTest);
+            Assert.Equal(1, sut.todoID);
+            Assert.Equal("Test", sut.description);
         }
 
     }

@@ -10,8 +10,8 @@ namespace TodoIT.Model
         private string _description;
         private bool _done;
         private Person _assignee;
-        public int todoIDTest { get  => _todoId;}
-        public string descriptionTest { get => _description; }
+        public int todoID { get  => _todoId;}
+        public string description { get => _description; }
 
 
         public ToDo(int todoIt, string description) {
