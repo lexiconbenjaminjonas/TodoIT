@@ -26,6 +26,5 @@
                 this.lastName = this.defaultLastName;
             }
         }
-        
     }
 }

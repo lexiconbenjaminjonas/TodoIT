@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="de3dbfd1-c5bb-45f1-9dcf-078435803b01" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TodoIT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TodoIT/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoITTEsts/ToDoITTEsts.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoIT.Tests/ToDoIT.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoITTEsts/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoIT.Tests/UnitTest1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoTests/ToDoTests.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoTests/UnitTest1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoIT.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TodoIT.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TodoIT/Model/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TodoIT/Model/Person.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649153164542</updated>
-      <workItem from="1649153173450" duration="1641000" />
+      <workItem from="1649153173450" duration="2329000" />
     </task>
     <servers />
   </component>
