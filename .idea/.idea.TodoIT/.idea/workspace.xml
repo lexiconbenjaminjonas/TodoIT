@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de3dbfd1-c5bb-45f1-9dcf-078435803b01" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ToDoIT.Tests/PersonTest1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToDoIT.Tests/PersonTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoIT.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TodoIT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TodoIT/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoITTEsts/ToDoITTEsts.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoIT.Tests/ToDoIT.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoITTEsts/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoIT.Tests/UnitTest1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoTests/ToDoTests.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoTests/UnitTest1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoIT.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TodoIT.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TodoIT/Model/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TodoIT/Model/Person.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ToDoIT.Tests/PersonTest1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -33,7 +34,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.TodoIT">
     <configuration name="TodoIT" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -61,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649153164542</updated>
-      <workItem from="1649153173450" duration="2329000" />
+      <workItem from="1649153173450" duration="3716000" />
     </task>
     <servers />
   </component>
