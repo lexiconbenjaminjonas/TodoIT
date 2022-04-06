@@ -83,6 +83,32 @@ namespace ToDoITTEsts
 
 
         [Fact]
+
+        public void FindByAssignee_Person()
+        {
+            //Arrange
+            Person assignee = new Person(0,"Test", "Testsson");
+            ToDoItems sut = new ToDoItems();
+            
+            sut.Clear();
+            ToDoSequencer.reset();
+
+            sut.CreateToDo("Test Todo1", assignee);
+            sut.CreateToDo("Test Todo2");
+            sut.CreateToDo("Test Todo3", assignee);
+            sut.CreateToDo("Test Todo2",new Person(1,"Man","Mannington"));
+
+            //Act
+            ToDo[] foundToDos = sut.FindByAssignee(assignee);
+            //Assert
+            foreach (var toDo in foundToDos)
+            {
+                Assert.Same(toDo.assignee, assignee);
+                Assert.Equal(2,foundToDos.Length);
+            }
+        }
+        
+        [Fact]
         public void FindByAssigneeTest()
         {
             //Arrange.
@@ -91,6 +117,8 @@ namespace ToDoITTEsts
             Person testPerson = new Person(99, "Testfirst", "Testlast");
             sut.CreateToDo("Test nr 1", testPerson);
             sut.CreateToDo("Test nr 2", testPerson);
+            sut.CreateToDo("Test nr 3", new Person(1000, "Wrong", "Guy"));
+            sut.CreateToDo("Test nr 4");
             ToDo[] expectedValue = new ToDo[2] { sut.FindAll()[0], sut.FindAll()[1] };
             //Act.
             ToDo[] testArray = sut.FindByAssignee(testPerson);
@@ -98,14 +126,18 @@ namespace ToDoITTEsts
             Assert.Equal(expectedValue, testArray);
         }
 
+
+
         [Fact]
         public void FindUnassignedToDoItemsTest()
         {
             //Arrange.
             ToDoItems sut = new ToDoItems();
+            Person testPerson = new Person(99, "Testfirst", "Testlast");
             sut.Clear();
             sut.CreateToDo("Test nr 1");
             sut.CreateToDo("Test nr 2");
+            sut.CreateToDo("Test nr 3", testPerson);
             ToDo[] expectedValue = new ToDo[2] { sut.FindAll()[0], sut.FindAll()[1] };
             //Act.
             ToDo[] testArray = sut.FindUnassignedTodoItems();
@@ -113,9 +145,25 @@ namespace ToDoITTEsts
             Assert.Equal(expectedValue, testArray);
         }
 
+        [Fact]
 
-
-
+        public void FindDoneStatusTest()
+        {
+            //Arrange
+            var sut = new ToDoItems();
+            sut.CreateToDo("Test");
+            sut.CreateToDo("Test");
+            var done = sut.CreateToDo("DoneTodo");
+            done.done = true;
+            
+            //Act
+            var doneStatus =sut.FindByDoneStatus(true);
+            //Assert
+            foreach (var toDo in doneStatus)
+            {
+                Assert.True(toDo.done);
+            }
+        }
 
 
 

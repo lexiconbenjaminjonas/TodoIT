@@ -6,15 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="de3dbfd1-c5bb-45f1-9dcf-078435803b01" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TodoIT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TodoIT/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoIT/Data/People.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TodoIT/Data/People.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoIT.Tests/ToDoItemsTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoIT.Tests/ToDoItemsTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoIT.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/TodoIT.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoIT/Model/ToDo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TodoIT/Model/ToDo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8517f607c12a4b508364c3f896f0fe6f11da8/d0/2f518e71/Assert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ToDoIT.Tests/PeopleTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a3fd172f89d7bea669bd8944468f7b366e4c441fde15361032cc85c15be5a5/Int32.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/377b61b613ea444f826f377d9474ffca3c9a8/60/bf299f13/TestInvoker`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -29,11 +42,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="XThreadsFramesViewSplitterKey" value="0.37301588" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="settings.editor.selected.configurable" value="RiderCSharpLiveTemplatesSettingsId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.TodoIT">
+  <component name="RunManager">
     <configuration name="TodoIT" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -66,7 +78,7 @@
       <workItem from="1649185686349" duration="515000" />
       <workItem from="1649224199638" duration="6058000" />
       <workItem from="1649231227050" duration="1881000" />
-      <workItem from="1649234640901" duration="1381000" />
+      <workItem from="1649234640901" duration="12518000" />
     </task>
     <servers />
   </component>
@@ -77,56 +89,44 @@
     <option name="coveragePercentColumnWidth" value="108" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="284" />
+    <option name="symbolColumnWidth" value="319" />
     <coverage-tree-state>
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 52% 88/183" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 336/336" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 52% 88/183" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="ToDoIT.Tests 59% 33/80" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 336/336" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="ToDoIT.Tests 0% 175/175" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 52% 88/183" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="ToDoIT.Tests 59% 33/80" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="ToDoITTEsts 59% 33/80" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 336/336" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="ToDoIT.Tests 0% 175/175" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="ToDoITTEsts 0% 175/175" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 52% 88/183" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="ToDoIT.Tests 59% 33/80" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="ToDoITTEsts 59% 33/80" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="PeopleTests 98% 1/48" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 336/336" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="ToDoIT.Tests 0% 175/175" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="ToDoITTEsts 0% 175/175" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="PeopleTests 0% 50/50" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 52% 88/183" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="TodoIT 47% 55/103" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 336/336" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="ToDoIT.Tests 0% 175/175" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="ToDoITTEsts 0% 175/175" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TodoSequencerTest 0% 11/11" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 52% 88/183" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="TodoIT 47% 55/103" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="TodoIT 47% 55/103" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 52% 88/183" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="TodoIT 47% 55/103" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="TodoIT 47% 55/103" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Model 57% 13/30" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 52% 88/183" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="TodoIT 47% 55/103" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="TodoIT 47% 55/103" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Model 57% 13/30" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Person 74% 6/23" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 336/336" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="ToDoIT.Tests 0% 175/175" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="ToDoITTEsts 0% 175/175" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="ToDoTest 0% 5/5" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
