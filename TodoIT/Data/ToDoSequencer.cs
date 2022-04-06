@@ -4,14 +4,14 @@ using System.Text;
 
 namespace TodoIT.Data
 {
-    class ToDoSequencer
+    public class ToDoSequencer
     {
         private static int _toDoId;
         public static int ToDoId { get => _toDoId; }
 
         public static int nextToDoId()
         {
-            return _toDoId++;
+            return ++_toDoId;
         }
 
         public static void reset()

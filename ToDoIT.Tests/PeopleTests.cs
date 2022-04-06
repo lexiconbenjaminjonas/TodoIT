@@ -67,11 +67,11 @@ namespace ToDoITTEsts
             
             people.CreatePerson("Person A","1");
             Person target = people.CreatePerson("Person B","2");
-            var foundPerson = people.FindById(1);
+            var foundPerson = people.FindById(2);
             
             // Assert
             
-            Assert.Equal(target,foundPerson);
+            Assert.Same(target,foundPerson);
         }
         
         [Fact]
