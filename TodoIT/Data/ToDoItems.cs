@@ -103,18 +103,13 @@ namespace TodoIT.Data
             return returnList.ToArray();
         }
 
-        public void RemoveTodo(ToDo item)
+        public void RemoveTodo(ToDo itemToRemove)
         {
-            int ignore=0;
-            for(int i=0; i < _toDoItem.Length; i++)
-            {
-                if (_toDoItem[i].Equals(item)) ignore = i;
-            }
+            int ignore=Array.FindIndex(_toDoItem,item => item==itemToRemove);
             ToDo[] tempArray = new ToDo[_toDoItem.Length - 1];
-            for(int i = 0; i < tempArray.Length; i++)
-            {
-                tempArray[i] = _toDoItem[i+(i>=ignore?1:0)];
-            }
+            Array.Copy(_toDoItem, 0, tempArray, 0, ignore);
+            Array.Copy(_toDoItem, ignore + 1, tempArray, ignore, tempArray.Length - ignore);
+
             _toDoItem = tempArray;
         }
     }
