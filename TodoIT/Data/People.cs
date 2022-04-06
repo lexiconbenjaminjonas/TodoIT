@@ -42,8 +42,6 @@ namespace TodoIT.Data
             Array.Resize(ref _persons,0);
         }
 
-        
-        
         public void removePerson(Person personToRemove)
         {
             int ignore=Array.FindIndex(_persons,item => item==personToRemove);

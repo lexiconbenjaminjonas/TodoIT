@@ -173,6 +173,7 @@ namespace ToDoITTEsts
             //Arrange.
             ToDoItems sut = new ToDoItems();
             sut.Clear();
+            ToDoSequencer.reset();
             sut.CreateToDo("Test nr 1");
             sut.CreateToDo("Test nr 2");
             sut.CreateToDo("Test nr 3");
