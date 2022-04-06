@@ -167,6 +167,24 @@ namespace ToDoITTEsts
             }
         }
 
+        [Fact]
+        public void RemoveTodoTest()
+        {
+            //Arrange.
+            ToDoItems sut = new ToDoItems();
+            sut.Clear();
+            sut.CreateToDo("Test nr 1");
+            sut.CreateToDo("Test nr 2");
+            sut.CreateToDo("Test nr 3");
+            sut.CreateToDo("Test nr 4");
+            //Act.
+            ToDo objectToRemove=sut.FindById(1);
+            sut.RemoveTodo(objectToRemove);
+            //Assert.
+            Assert.DoesNotContain<ToDo>(objectToRemove, sut.FindAll());
+        }
+
+
 
 
 

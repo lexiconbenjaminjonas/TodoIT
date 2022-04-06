@@ -115,6 +115,7 @@ namespace TodoIT.Data
             {
                 tempArray[i] = _toDoItem[i+(i>=ignore?1:0)];
             }
+            _toDoItem = tempArray;
         }
     }
 }
