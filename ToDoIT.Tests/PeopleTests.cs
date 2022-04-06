@@ -51,19 +51,27 @@ namespace ToDoITTEsts
             p.Clear();
             
             //Assert
-            // Assert.NotEqual(peoplesizeBeforeReset,p.Size());
             Assert.All(p.FindAll(),a=>Assert.Null(a));
         }
 
         [Fact]
         public void FindByIDTest()
         {
+            // Arrange
+            
             People people = new People();
+            people.Clear();
+            PersonSequencer.reset();
+            
+            // Act
+            
             people.CreatePerson("Person A","1");
-            people.CreatePerson("Person B","2");
-
+            Person target = people.CreatePerson("Person B","2");
             var foundPerson = people.FindById(1);
-            Assert.NotNull(foundPerson);
+            
+            // Assert
+            
+            Assert.Equal(target,foundPerson);
         }
         
         [Fact]
