@@ -40,6 +40,7 @@ namespace TodoIT.Data
         public void Clear()
         {
             Array.Clear(_persons,0,_persons.Length);
+            Array.Resize(ref _persons,0);
         }
     }
 }
