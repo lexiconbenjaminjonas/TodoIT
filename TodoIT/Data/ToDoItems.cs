@@ -76,7 +76,7 @@ namespace TodoIT.Data
         public ToDo[] FindByAssignee(int personId)
         {
             List<ToDo> returnList = new List<ToDo>();
-            foreach (ToDo c in _toDoItem.Where(c => c.assignee.PersonId==personId))
+            foreach (ToDo c in _toDoItem.Where(c => c.assignee != null && c.assignee.PersonId==personId))
             {
                 returnList.Add(c);
             }
@@ -86,7 +86,7 @@ namespace TodoIT.Data
         public ToDo[] FindByAssignee(Person assignee)
         {
             List<ToDo> returnList = new List<ToDo>();
-            foreach (ToDo c in _toDoItem.Where(c => c.assignee == assignee))
+            foreach (ToDo c in _toDoItem.Where(c => c.assignee != null && c.assignee == assignee))
             {
                 returnList.Add(c);
             }

@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="de3dbfd1-c5bb-45f1-9dcf-078435803b01" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TodoIT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TodoIT/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoIT.Tests/PeopleTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoIT.Tests/PeopleTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ToDoIT.Tests/ToDoItemsTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoIT.Tests/ToDoItemsTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoIT/Data/People.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TodoIT/Data/People.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoIT.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/TodoIT.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoIT/Data/ToDoItems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TodoIT/Data/ToDoItems.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,26 +87,48 @@
     <option name="version" value="3" />
   </component>
   <component name="UnitTestsCoverage.Settings">
-    <option name="coveragePercentColumnWidth" value="67" />
+    <option name="coveragePercentColumnWidth" value="107" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="186" />
+    <option name="symbolColumnWidth" value="314" />
     <coverage-tree-state>
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 82% 75/415" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 98% 9/429" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 82% 75/415" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="ToDoIT.Tests 89% 24/214" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 98% 9/429" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TodoIT 98% 4/191" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 82% 75/415" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="ToDoIT.Tests 89% 24/214" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="ToDoITTEsts 89% 24/214" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 98% 9/429" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TodoIT 98% 4/191" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TodoIT 98% 4/191" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 98% 9/429" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TodoIT 98% 4/191" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TodoIT 98% 4/191" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Model 100% 0/34" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 98% 9/429" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TodoIT 98% 4/191" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TodoIT 98% 4/191" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Data 99% 1/154" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 98% 9/429" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TodoIT 98% 4/191" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="TodoIT 98% 4/191" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Data 99% 1/154" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="ToDoItems 99% 1/104" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />

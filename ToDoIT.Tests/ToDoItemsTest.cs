@@ -151,19 +151,31 @@ namespace ToDoITTEsts
         {
             //Arrange
             var sut = new ToDoItems();
-            sut.CreateToDo("Test");
-            sut.CreateToDo("Test");
+            
+            ToDoSequencer.reset();
+            sut.Clear();
+            
+            var notdone1 = sut.CreateToDo("Test");
+            var notdone2 = sut.CreateToDo("Test");
             var DoneTodo = sut.CreateToDo("DoneTodo");
             DoneTodo.done = true;
             
             //Act
             var doneStatus = sut.FindByDoneStatus(true);
+            var notDoneStatus = sut.FindByDoneStatus(false);
             //Assert
             foreach (var toDo in doneStatus)
             {
                 Assert.NotNull(toDo);
                 Assert.Equal(new ToDo[1] {DoneTodo},doneStatus);
                 Assert.True(toDo.done);
+            }
+
+            foreach (var toDo in notDoneStatus)
+            {
+                Assert.NotNull(toDo);
+                Assert.Equal(new ToDo[2] {notdone1,notdone2},notDoneStatus);
+                Assert.False(toDo.done);
             }
         }
 
@@ -185,6 +197,25 @@ namespace ToDoITTEsts
             Assert.DoesNotContain<ToDo>(objectToRemove, sut.FindAll());
         }
 
+        [Fact]
+
+        public void FindByAssigneeId()
+        {
+            //Arrange.
+            ToDoItems sut = new ToDoItems();
+            sut.Clear();
+            PersonSequencer.reset();
+            Person testPerson = new Person(99, "Testfirst", "Testlast");
+            sut.CreateToDo("Test nr 1", testPerson);
+            sut.CreateToDo("Test nr 2", testPerson);
+            sut.CreateToDo("Test nr 3", new Person(1000, "Wrong", "Guy"));
+            sut.CreateToDo("Test nr 4");
+            ToDo[] expectedValue = new ToDo[2] { sut.FindAll()[0], sut.FindAll()[1] };
+            //Act.
+            ToDo[] testArray = sut.FindByAssignee(99);
+            //Assert.
+            Assert.Equal(expectedValue, testArray);
+        }
 
 
 
