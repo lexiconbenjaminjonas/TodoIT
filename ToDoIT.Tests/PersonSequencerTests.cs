@@ -11,28 +11,28 @@ namespace ToDoITTEsts
         {
             //set up
             PersonSequencer.nextPersonId();
-            int personId_Before = PersonSequencer.PersonId;
+            int sut_before = PersonSequencer.PersonId;
             
             // act
             PersonSequencer.reset();
             
             // Evaluate
             
-            Assert.NotEqual(personId_Before, PersonSequencer.PersonId);
+            Assert.NotEqual(sut_before, PersonSequencer.PersonId);
         }
 
         [Fact]
         public void nextPersonIdTest()
         {
             //set up
-            int personId_Before = PersonSequencer.PersonId;
+            int sut_before = PersonSequencer.PersonId;
             
             // act
             PersonSequencer.nextPersonId();
             
             // Evaluate
             
-            Assert.NotEqual(personId_Before, PersonSequencer.PersonId);
+            Assert.NotEqual(sut_before, PersonSequencer.PersonId);
 
         }
     }

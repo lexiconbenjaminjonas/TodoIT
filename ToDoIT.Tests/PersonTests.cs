@@ -12,11 +12,11 @@ namespace ToDoITTEsts
         {
             string firstName = "Jonas";
             string lastName = "Swansson";
-            Person p = new Person(0,firstName, lastName);
+            Person sut = new Person(0,firstName, lastName);
             
-            Assert.Equal(firstName, p.FirstName);
-            Assert.Equal(lastName, p.LastName);
-            Assert.Equal(0,p.PersonId);
+            Assert.Equal(firstName, sut.FirstName);
+            Assert.Equal(lastName, sut.LastName);
+            Assert.Equal(0,sut.PersonId);
         }
         
         [Fact]
@@ -24,11 +24,11 @@ namespace ToDoITTEsts
         {
             string firstName = "";
             string lastName = "";
-            Person p = new Person(0,firstName, lastName);
+            Person sut = new Person(0,firstName, lastName);
             
-            Assert.Equal("Steve", p.FirstName);
-            Assert.Equal("Jobs", p.LastName);
-            Assert.Equal(0,p.PersonId);
+            Assert.Equal("Steve", sut.FirstName);
+            Assert.Equal("Jobs", sut.LastName);
+            Assert.Equal(0,sut.PersonId);
         }
     }
 }

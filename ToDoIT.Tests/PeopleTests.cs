@@ -1,5 +1,4 @@
-﻿using System;
-using TodoIT.Data;
+﻿using TodoIT.Data;
 using TodoIT.Model;
 using Xunit;
 
@@ -13,13 +12,13 @@ namespace ToDoITTEsts
         public void SizeTest()
         {
             //Set up
-            People people = new People();
-            people.Clear();
+            People sut = new People();
+            sut.Clear();
             
             //Act
-            int before = people.Size();
-            people.CreatePerson("First", "Last");
-            var after = people.Size();
+            int before = sut.Size();
+            sut.CreatePerson("First", "Last");
+            var after = sut.Size();
             
             //Assert
             Assert.Equal(before + 1,after);
@@ -29,11 +28,11 @@ namespace ToDoITTEsts
         public void CreatePersonTest()
         {
 
-            People p = new People();
+            People sut = new People();
             string FirstName = "Reo";
             string LastName = "Emanuell";
             
-            Person person = p.CreatePerson(FirstName,LastName);
+            Person person = sut.CreatePerson(FirstName,LastName);
             Assert.NotNull(person);
             Assert.Equal(FirstName,person.FirstName);
             Assert.Equal(LastName,person.LastName);
@@ -47,7 +46,6 @@ namespace ToDoITTEsts
             p.CreatePerson("Steve", "Jobs");
             p.CreatePerson("Steve", "Jobs");
             p.CreatePerson("Steve", "Jobs");
-            var peoplesizeBeforeReset = p.Size();
             
             //Act
             p.Clear();
@@ -71,21 +69,21 @@ namespace ToDoITTEsts
         [Fact]
         public void FindByID_InvalidId_Test()
         {
-            People people = new People();
-            people.CreatePerson("Person A","1");
-            people.CreatePerson("Person B","2");
+            People sut = new People();
+            sut.CreatePerson("Person A","1");
+            sut.CreatePerson("Person B","2");
 
-            var foundPerson = people.FindById(-1);
+            var foundPerson = sut.FindById(-1);
             Assert.Null(foundPerson);
         }
 
         [Fact]
         public void FindAllTest()
         {
-            People people = new People();
-            people.CreatePerson("Person A","1");
-            people.CreatePerson("Person B","2");
-            var AllPeople = people.FindAll();
+            People sut = new People();
+            sut.CreatePerson("Person A","1");
+            sut.CreatePerson("Person B","2");
+            var AllPeople = sut.FindAll();
             
             Assert.NotNull(AllPeople);
             Assert.NotEmpty(AllPeople);
