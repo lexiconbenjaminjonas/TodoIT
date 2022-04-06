@@ -13,7 +13,7 @@ namespace TodoIT.Model
         public int todoID { get  => _todoId;}
         public string description { get => _description; }
         public bool done { get => _done; }
-        public Person assignee { get => _assignee; }
+        public Person assignee { get => _assignee; set => _assignee = value; }
 
 
 

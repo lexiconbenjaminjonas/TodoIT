@@ -39,6 +39,15 @@ namespace TodoIT.Data
             return t;
         }
 
+        public ToDo CreateToDo(string description, Person assignee)
+        {
+            ToDo t = new ToDo(ToDoSequencer.nextToDoId(), description);
+            t.assignee = assignee;
+            Array.Resize(ref _toDoItem, _toDoItem.Length + 1);
+            _toDoItem[_toDoItem.Length - 1] = t;
+            return t;
+        }
+
         public void Clear()
         {
             Array.Resize(ref _toDoItem,0);
