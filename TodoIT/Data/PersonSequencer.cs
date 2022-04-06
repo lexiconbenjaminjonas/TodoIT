@@ -10,7 +10,7 @@ namespace TodoIT.Data
 
         public static int nextPersonId()
         {
-            return personId++;
+            return ++personId;
         }
 
         public static void reset()
