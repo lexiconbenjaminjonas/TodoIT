@@ -102,5 +102,19 @@ namespace TodoIT.Data
             }
             return returnList.ToArray();
         }
+
+        public void RemoveTodo(ToDo item)
+        {
+            int ignore=0;
+            for(int i=0; i < _toDoItem.Length; i++)
+            {
+                if (_toDoItem[i].Equals(item)) ignore = i;
+            }
+            ToDo[] tempArray = new ToDo[_toDoItem.Length - 1];
+            for(int i = 0; i < tempArray.Length; i++)
+            {
+                tempArray[i] = _toDoItem[i+(i>=ignore?1:0)];
+            }
+        }
     }
 }
