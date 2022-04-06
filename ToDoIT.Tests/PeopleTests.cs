@@ -96,5 +96,25 @@ namespace ToDoITTEsts
             Assert.NotNull(AllPeople);
             Assert.NotEmpty(AllPeople);
         }
+
+        [Fact]
+
+        public void RemovePerson()
+        {
+            //Arrange
+            var sut = new People();
+            sut.Clear();
+            PersonSequencer.reset();
+
+            sut.CreatePerson("Test", "test");
+            sut.CreatePerson("Test2", "test");
+            sut.CreatePerson("Test3", "test");
+            var personToRemove = sut.FindById(2);
+            //Act
+            sut.removePerson(personToRemove);
+            //Assert
+            Assert.DoesNotContain<Person>(personToRemove, sut.FindAll());
+        }
+        
     }
 }

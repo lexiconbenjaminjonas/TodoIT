@@ -41,5 +41,17 @@ namespace TodoIT.Data
         {
             Array.Resize(ref _persons,0);
         }
+
+        
+        
+        public void removePerson(Person personToRemove)
+        {
+            int ignore=Array.FindIndex(_persons,item => item==personToRemove);
+            Person[] tempArray = new Person[_persons.Length - 1];
+            Array.Copy(_persons, 0, tempArray, 0, ignore);
+            Array.Copy(_persons, ignore + 1, tempArray, ignore, tempArray.Length - ignore);
+
+            _persons = tempArray;
+        }
     }
 }
