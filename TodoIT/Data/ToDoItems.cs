@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using TodoIT.Model;
+using System.Linq;
 
 namespace TodoIT.Data
 {
@@ -41,6 +42,46 @@ namespace TodoIT.Data
         public void Clear()
         {
             Array.Resize(ref _toDoItem,0);
+        }
+
+        public ToDo[] FindByDoneStatus(bool doneStatus)
+        {
+            List <ToDo> returnList = new List<ToDo>();
+            foreach (ToDo c in _toDoItem.Where(c => c.done))
+            {
+                returnList.Add(c);
+            }
+            return returnList.ToArray();
+        }
+        
+        public ToDo[] FindByAssignee(int personId)
+        {
+            List<ToDo> returnList = new List<ToDo>();
+            foreach (ToDo c in _toDoItem.Where(c => c.assignee.PersonId==personId))
+            {
+                returnList.Add(c);
+            }
+            return returnList.ToArray();
+        }
+
+        public ToDo[] FindByAssignee(Person assignee)
+        {
+            List<ToDo> returnList = new List<ToDo>();
+            foreach (ToDo c in _toDoItem.Where(c => c.assignee == assignee))
+            {
+                returnList.Add(c);
+            }
+            return returnList.ToArray();
+        }
+
+        public ToDo[] FindUnassignedTodoItems()
+        {
+            List<ToDo> returnList = new List<ToDo>();
+            foreach (ToDo c in _toDoItem.Where(c => c.assignee == null))
+            {
+                returnList.Add(c);
+            }
+            return returnList.ToArray();
         }
     }
 }

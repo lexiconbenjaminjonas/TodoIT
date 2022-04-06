@@ -12,6 +12,9 @@ namespace TodoIT.Model
         private Person _assignee;
         public int todoID { get  => _todoId;}
         public string description { get => _description; }
+        public bool done { get => _done; }
+        public Person assignee { get => _assignee; }
+
 
 
         public ToDo(int todoIt, string description) {
