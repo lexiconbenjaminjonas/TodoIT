@@ -153,14 +153,16 @@ namespace ToDoITTEsts
             var sut = new ToDoItems();
             sut.CreateToDo("Test");
             sut.CreateToDo("Test");
-            var done = sut.CreateToDo("DoneTodo");
-            done.done = true;
+            var DoneTodo = sut.CreateToDo("DoneTodo");
+            DoneTodo.done = true;
             
             //Act
-            var doneStatus =sut.FindByDoneStatus(true);
+            var doneStatus = sut.FindByDoneStatus(true);
             //Assert
             foreach (var toDo in doneStatus)
             {
+                Assert.NotNull(toDo);
+                Assert.Equal(new ToDo[1] {DoneTodo},doneStatus);
                 Assert.True(toDo.done);
             }
         }
