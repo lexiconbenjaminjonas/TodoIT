@@ -82,6 +82,37 @@ namespace ToDoITTEsts
         }
 
 
+        [Fact]
+        public void FindByAssigneeTest()
+        {
+            //Arrange.
+            ToDoItems sut = new ToDoItems();
+            sut.Clear();
+            Person testPerson = new Person(99, "Testfirst", "Testlast");
+            sut.CreateToDo("Test nr 1", testPerson);
+            sut.CreateToDo("Test nr 2", testPerson);
+            ToDo[] expectedValue = new ToDo[2] { sut.FindAll()[0], sut.FindAll()[1] };
+            //Act.
+            ToDo[] testArray = sut.FindByAssignee(testPerson);
+            //Assert.
+            Assert.Equal(expectedValue, testArray);
+        }
+
+        [Fact]
+        public void FindUnassignedToDoItemsTest()
+        {
+            //Arrange.
+            ToDoItems sut = new ToDoItems();
+            sut.Clear();
+            sut.CreateToDo("Test nr 1");
+            sut.CreateToDo("Test nr 2");
+            ToDo[] expectedValue = new ToDo[2] { sut.FindAll()[0], sut.FindAll()[1] };
+            //Act.
+            ToDo[] testArray = sut.FindUnassignedTodoItems();
+            //Assert.
+            Assert.Equal(expectedValue, testArray);
+        }
+
 
 
 

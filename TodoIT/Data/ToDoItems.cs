@@ -56,10 +56,20 @@ namespace TodoIT.Data
         public ToDo[] FindByDoneStatus(bool doneStatus)
         {
             List <ToDo> returnList = new List<ToDo>();
-            foreach (ToDo c in _toDoItem.Where(c => c.done))
+            if (doneStatus)
             {
-                returnList.Add(c);
+                foreach (ToDo c in _toDoItem.Where(c => c.done))
+                {
+                    returnList.Add(c);
+                }
+            }else
+            {
+                foreach (ToDo c in _toDoItem.Where(c => !c.done))
+                {
+                    returnList.Add(c);
+                }
             }
+            
             return returnList.ToArray();
         }
         
