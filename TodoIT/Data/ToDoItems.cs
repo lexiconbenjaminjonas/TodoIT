@@ -5,7 +5,7 @@ using TodoIT.Model;
 
 namespace TodoIT.Data
 {
-    class ToDoItems
+    public class ToDoItems
     {
         private static ToDo[] _toDoItem = new ToDo[0];
 
